@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto&display=swap');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Gochi Hand', cursive;*/
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p {
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.col-container {
+  font-size: 0px;
+}
+
+.col-container>* {
+  font-size: 1rem;
+}
+
+.col {
+  margin: 3%;
+  display: inline-block;
+  background: #C4C4C4;
+  border-radius: 15px;
+  /*box-shadow: 5px 10px #9E9E9E;*/
+}
+
+#ban {
+  background-color: #E5AF00;
+  border-radius: 15px;
+}
+
+.onethird {
+  width: 27%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Gochi Hand', cursive;
+  color: black;
+}
+
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 2em;
+  margin-top: auto;
+}
+
+h5 {
+  font-size: 1.8em;
+}
+
+h6 {
+  font-size: 1.5em;
+}
+
+p{
+  line-height: 2em;
+}
+
+html {
+  background-color: #dfdfde;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header h1,
+footer p {
+  background-color: #cd8c95;
+  border-radius: 15px 50px;
+  padding: 20px;
+}

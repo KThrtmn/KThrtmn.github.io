@@ -1,3 +1,5 @@
+/*optomized for 375X667 view*/ 
+
 @import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto&display=swap');
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Gochi Hand', cursive;*/
@@ -16,6 +18,7 @@ html {
 p {
   padding: 5px;
   font-family: 'Roboto', sans-serif;
+  text-align: justify;
 }
 
 .col-container {
@@ -28,7 +31,9 @@ p {
 
 .col {
   margin: 3%;
-  display: inline-block;
+  /*allowed for columns to float to top*/
+ /* display: inline-grid;*/
+  flex-direction:column; 
   background: #C4C4C4;
   border-radius: 15px;
   /*box-shadow: 5px 10px #9E9E9E;*/
@@ -38,11 +43,15 @@ p {
   background-color: #E5AF00;
   border-radius: 15px;
 }
-
-.onethird {
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*.onethird {
   width: 27%;
 }
-
+*/
 h1,
 h2,
 h3,
@@ -85,10 +94,10 @@ p{
 
 html {
   background-color: #dfdfde;
-  margin-left: 100px;
+ /* margin-left: 100px;
   margin-right: 100px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 20px;*/
 }
 
 header h1,
@@ -98,4 +107,7 @@ footer p {
   padding: 20px;
 }
 
-
+footer p{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}

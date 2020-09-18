@@ -1,0 +1,117 @@
+@media only screen and (min-width: 800px) {
+    .col {
+        display: inline-grid;
+    }
+ 
+    .onethird {
+        width: 27%;
+    }
+ 
+    html {
+ 
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+ 
+}
+/*optomized for 375X667 view*/ 
+ 
+@import url('https://fonts.googleapis.com/css?family=Gochi+Hand|Roboto&display=swap');
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Gochi Hand', cursive;*/
+ 
+ 
+html {
+  box-sizing: border-box;
+}
+ 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+ 
+p {
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  text-align: justify;
+}
+ 
+ 
+
+img{
+float: right;
+border-radius: 25px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Gochi Hand', cursive;
+  color: black;
+}
+ 
+ 
+h1 {
+  font-size: 4em;
+}
+ 
+h2 {
+  font-size: 2em;
+}
+ 
+h3 {
+  font-size: 2.5em;
+}
+ 
+h4 {
+  font-size: 2em;
+  margin-top: auto;
+}
+ 
+h5 {
+  font-size: 1.8em;
+}
+ 
+h6 {
+  font-size: 1.5em;
+}
+ 
+p{
+  line-height: 2em;
+}
+ 
+html {
+  background-color: #dfdfde;
+margin: 20px 500px 20px 500px
+}
+
+footer{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #cd8c95;
+    border-radius: 15px 50px;
+    padding: 20px;
+  }
+ 
+header h1{
+  background-color: #cd8c95;
+  border-radius: 15px 50px;
+  padding: 20px;
+}
+ 
+footer{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #cd8c95;
+  border-radius: 15px 50px;
+  padding: 20px;
+}
+ 
+

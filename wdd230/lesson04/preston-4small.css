@@ -39,15 +39,17 @@ footer {
 	justify-content:center;
 }
 
-footer img {
-    width: 100%;
-	height: auto;
-}
-
 header img {
     width: 80px;
     height: auto;
 }
+
+footer img {
+	width: 100%;
+	height: auto;
+}
+
+
 
 .headings {
     display: flex;

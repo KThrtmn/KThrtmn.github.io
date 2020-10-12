@@ -24,6 +24,49 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+header {
+
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+	background-color: #fff;
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+footer img {
+    width: 100%;
+	height: auto;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+.headings h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    margin: 0 0 0 17px;
+}
+
+.m {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1pt;
+    color: #fff;
+    margin-left: 20px;
+}
+
 header,
 footer {
     background-color: #2d3142;
@@ -31,7 +74,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    
+
 }
 
 header,
@@ -47,19 +90,27 @@ h1 {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
-h2, h3, h4, h5, h6{
+
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #000000;
     font-family: 'Open Sans', sans-serif;
 }
-h2{
-    font-size:2.25em;
+
+h2 {
+    font-size: 2.25em;
 }
-h3{
-    font-size:1.5em;
+
+h3 {
+    font-size: 1.5em;
 }
-p{
-    font-family:'Roboto', sans-serif;
-    font-size: 1.25em;
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
 
 nav button {
@@ -100,8 +151,8 @@ nav ul li.active a {
     color: #fff
 }
 
-nav ul.hide{
-    display:none;
+nav ul.hide {
+    display: none;
 }
 
 main article {
@@ -110,21 +161,35 @@ main article {
     padding: 0 1rem;
     background-color: #ffffff;
 }
+
 footer {
-  
-    height: 6rem;
+
+    height: 8rem;
     color: #ffffff;
 }
-main picture {
+
+
+/*main picture {
     display: block;
 }
-
-.flex{
- display: flex;
-flex-wrap: wrap;
- justify-content: center;
- justify-content: space-around;
+*/
+section div img {
+    width: 100%;
+    height: auto;
 }
+
+
+
+
+
+
+/*article img{
+    display: inline;
+    float: right;
+}
+*/
+
+
 
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -132,4 +197,4 @@ flex-wrap: wrap;
     content: "";
     display: table;
     clear: both;
-  }
+}

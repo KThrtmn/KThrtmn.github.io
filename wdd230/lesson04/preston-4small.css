@@ -181,15 +181,24 @@ section div img {
 }
 
 
-
-
-
-
-/*article img{
-    display: inline;
-    float: right;
+.flex {
+    display: flex;
+    flex-direction: column;
 }
-*/
+
+
+.flex img {
+    padding-top: 10px;
+    width: 100%;
+    height: auto;
+}
+
+
+.articleTitle{
+    float:right;
+}
+
+
 
 
 

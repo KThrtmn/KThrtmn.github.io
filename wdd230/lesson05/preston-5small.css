@@ -112,7 +112,7 @@ nav button {
 
 nav {
     font-family: Cerdana, sans-serif;
-    background-color: #ef8354;
+    background-color: #bfc0c0;
     text-align: center;
     box-shadow: 0 2px 15px #262626;
 }
@@ -132,11 +132,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .3);
 }
 
 nav ul li.active a {
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(45, 49, 66, 0.70);
     color: #fff
 }
 
@@ -156,6 +156,7 @@ footer {
     height: 8rem;
     color: #ffffff;
 }
+
 
 
 /*main picture {
@@ -185,8 +186,22 @@ div img {
     float: right;
 }
 
+.stats {
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    background: radial-gradient(#ffffff, #ef8354);
+    border: 1px solid #000;
+    padding: 1.5rem;
+    box-shadow: 0 0 30px #111;
+    opacity: .8;
+}
 
 
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+}
 
 
 

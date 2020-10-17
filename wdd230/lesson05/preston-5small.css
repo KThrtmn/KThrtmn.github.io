@@ -187,9 +187,9 @@ div img {
 }
 
 .stats {
-    position: absolute;
+    /*position: absolute;
     top: 25px;
-    left: 50px;
+    left: 50px;*/
     background: radial-gradient(#ffffff, #ef8354);
     border: 1px solid #000;
     padding: 1.5rem;
@@ -202,6 +202,7 @@ div img {
     margin: 10px auto;
     position: relative;
 }
+
 
 
 

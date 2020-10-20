@@ -203,6 +203,12 @@ div img {
     position: relative;
 }
 
+#pancakes{
+    display: block;
+    max-width: 100%;
+    background-color: #ef8354;
+    text-align: center;
+}
 
 
 

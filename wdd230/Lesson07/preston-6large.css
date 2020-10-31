@@ -27,6 +27,10 @@
         position: relative;
     }
 
+    .shadow:hover{
+        box-shadow: 0 0 50px #333;
+     }
+
 }
 
 /*end large */

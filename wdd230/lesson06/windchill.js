@@ -2,40 +2,22 @@
 //do I need to sep parms?, intellasense?//
 
 
-
-
+var temp = parseInt(document.getElementById("current").innerHTML);
+var wind = parseInt(document.getElementById("windSpeed").innerHTML);
 
 
 
 /**
- * 
- * @param {*} params 
+ * Calculation of windchill if conditions are met
  */
-function windchill(params) {
-    var temp = ;
-    var wind = ;
-
-    //calc?
-    //f=35.74+0.6215t−35.75s0.16+0.4275ts0.16
-
-    /**
-     * Calculation of windchill
-     */
+if (temp <= 50 && wind > 3.0) {
     var chill = (35.75 + (0.6215 * temp)) -
-        (35.75 * Math.pow(wind: 0.16)) +
-        (0.42575 * temp * Math.pow(wind: 0.16));
+        (35.75 * Math.pow(wind, 0.16)) +
+        (0.42575 * temp * Math.pow(wind, 0.16));
 
-        //round number?
-    var chill=document.getElementById('chill').innerHTML=chill
+    chill = Math.round(chill);
 
-}
+    document.getElementById("chill").innerHTML = chill + '&#176;';
 
-//display only if winchill is applicable... 
-
-if (temp <= 50 && wind < 3.0)
-    //display wind chill (consol log??)
-else if
-// dont display
-
-// if (!(temp <= 50 && wind < 3.0)
-//dont display
+} else
+    document.getElementById("chill").innerHTML = 'N/A';

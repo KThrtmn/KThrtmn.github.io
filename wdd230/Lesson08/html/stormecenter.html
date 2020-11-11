@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StormDance Preston Idaho</title>
+
+
+
+    <link href="/css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-8small.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-8medium.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-8large.css" type="text/css" rel="stylesheet" />
+
+
+    <link rel="shortcut icon" href="/img/favicon.ico" type="img/x-icon" />
+</head>
+
+
+<header>
+
+    <picture>
+        <img src="/img/logo2.png" alt="logo">
+    </picture>
+    <section class="headings">
+        <h1>Storm Dance</h1>
+        <div class="m">For the Rainy Days</div>
+    </section>
+
+
+
+</header>
+
+<body>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Storm Center page</h2>
+
+        <article>
+            <form method="GET" action="thanks.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <!--Name-->
+                    <label>Full Name* <input type="text" name="name" required> </label>
+                    <br>
+
+                    <!--Email-->
+                    <label>Email* <input type="email" name="email" required placeholder="user@gmail.com"> </label>
+                    <br>
+
+                    <!--Phone-->
+                    <label>Phone* <input type="tell" name="phone" required placeholder="###-###-####"> </label>
+                    <br>
+
+                    <!--Zip-->
+                    <label for="zip">zip*<input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"
+                            autocomplete="shipping postal-codep"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm Data</legend>
+                    <!--Date of storm event-->
+                    <label>Date*<input type="date" name="theDate"></label>
+                    <br>
+
+                    <!--Storm type-->
+                    <label>Storm Type*
+                        <input name="Storm type" list="stormlist">
+                        <label>
+                            <datalist id="stormlist">
+                                <option value="Select Storm type"></option>
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist>
+                        </label>
+                    </label>
+                    <br>
+
+                    <!--add css-->
+                    <!--Storm Severity-->
+                    <label class="flexy" for="rating">
+                        Storm Severity* &nbsp;&nbsp;&nbsp;
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks">
+                    </label>
+                    <br>
+
+                    <!--Storm Region-->
+                    <label>Storm Region*
+                        <input name="Storm Region" list="stormregion">
+                        <label>
+                            <datalist id="stormregion">
+                                <option value="Select Region"></option>
+                                <option value="Preston"></option>
+                                <option value="Soada Springs"></option>
+                                <option value="Fish Haven"></option>
+                            </datalist>
+                        </label>
+                    </label>
+                    <br>
+
+                    <!--add css-->
+                    <!--user in-danger lever-->
+                    <fieldset class="nestedfieldset">
+                        <legend>Danger Level<em>Are you in Danger?</em></legend>
+                        <div>
+                            <label><input type="radio" id="Yes" name="Yes" value="Danger">Yes</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" id="No" name="No" value="noDanger">No</label>
+                        </div>
+                        <div>
+                            <label><input type="radio" id="Maybe" name="Maybe" value="possibleDanger">Maybe</label>
+                        </div>
+
+                    </fieldset>
+
+
+                    <!--additional information-->
+                    <label>Additonal infomation
+                        <input type="text" size="100" name="input1" required pattern="[A-Za-z]">
+                    </label>
+                </fieldset>
+
+                
+                <!--Submit button-->
+                <fieldset>
+                <input type="submit">
+                </fieldset>
+            </form>
+
+        </article>
+
+    </main>
+    <footer>
+
+
+
+        <!-- <section class="headings">
+            <h1>Contact</h1>
+            <div class="m">place holder</div>
+
+        </section>
+        <picture>
+            <img src="https://loremflickr.com/300/100/map" alt="map">
+        </picture>
+
+
+    </footer>
+
+</body>
+
+<!--pancake banner on fridays-->
+        <script src="pancakes6.js"></script>
+
+        <!--hamburger menue-->
+        <script src="hamburger8.js"></script>
+
+        <!--windChill-->
+        <script src="windchill.js"></script>
+
+        <!--web font loader-->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="webFontLoader.js"></script>
+
+
+</html>

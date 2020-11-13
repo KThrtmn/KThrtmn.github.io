@@ -197,12 +197,13 @@ div img {
     opacity: .8;
 }
 
-
+/*****hero banner******/
 .herodiv {
     margin: 10px auto;
     position: relative;
 }
 
+/*****pancake banner******/
 #pancakes{
     display: block;
     max-width: 100%;
@@ -210,6 +211,7 @@ div img {
     text-align: center;
 }
 
+/*****gallery images******/
 .grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
@@ -217,7 +219,68 @@ div img {
     overflow: auto;
 }
 
+/******FORM*********/
 
+form fieldset{
+    margin: 2rem 0;
+    border: 2.5px solid#bfc0c0;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+form legend{
+    color:#000;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form label.rating, form div{
+    display: block;
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+form label.rating input{
+    display: block;
+    font-size: 1rem;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form label.top input, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+form label.sbs{
+    display: block;
+    padding: .75rem;
+}
+
+form input.submitBtn{
+    border:none;
+    background-color:#ef8354;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required{
+    border-left: #ef8354 solid 6px;
+}
+
+form label.top input:required:valid{
+    border-left: #bfc0c0 solid 6px;
+}
 
 
 

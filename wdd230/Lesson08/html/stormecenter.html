@@ -54,30 +54,32 @@
                 <fieldset>
                     <legend>Personal Information</legend>
                     <!--Name-->
-                    <label>Full Name* <input type="text" name="name" required> </label>
-                    <br>
+                    <label class="top">Full Name* <input type="text" name="name" pattern ="[a-zA-Z]+" minlength="5" required> </label>
+                   
 
                     <!--Email-->
-                    <label>Email* <input type="email" name="email" required placeholder="user@gmail.com"> </label>
-                    <br>
+                    <label class="top">Email <input type="email" name="email" required placeholder="user@gmail.com"> </label>
+                    
 
                     <!--Phone-->
-                    <label>Phone* <input type="tell" name="phone" required placeholder="###-###-####"> </label>
-                    <br>
+                    <label class="top">Phone* <input type="tel" name="phone" required placeholder="###-###-####" required> </label>
+                   
 
                     <!--Zip-->
-                    <label for="zip">zip*<input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"
-                            autocomplete="shipping postal-codep"></label>
+                    <label class="top">zip*<input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"
+                            autocomplete="shipping postal-codep" required></label>
                 </fieldset>
+
+
 
                 <fieldset>
                     <legend>Storm Data</legend>
                     <!--Date of storm event-->
-                    <label>Date*<input type="date" name="theDate"></label>
-                    <br>
+                    <label class="top">Date<input type="date" name="completeDate"></label>
+                  
 
                     <!--Storm type-->
-                    <label>Storm Type*
+                    <label class="top">Storm Type
                         <input name="Storm type" list="stormlist">
                         <label>
                             <datalist id="stormlist">
@@ -89,18 +91,18 @@
                             </datalist>
                         </label>
                     </label>
-                    <br>
+                    
 
                     <!--add css-->
                     <!--Storm Severity-->
-                    <label class="flexy" for="rating">
-                        Storm Severity* &nbsp;&nbsp;&nbsp;
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks">
+                    <label class="rating" for="rating">
+                        Storm Severity 
+                        <input type="range" name="severity" min="1" max="10" step="1" list="numbers">
                     </label>
-                    <br>
+                    
 
                     <!--Storm Region-->
-                    <label>Storm Region*
+                    <label class="top">Storm Region
                         <input name="Storm Region" list="stormregion">
                         <label>
                             <datalist id="stormregion">
@@ -111,36 +113,32 @@
                             </datalist>
                         </label>
                     </label>
-                    <br>
+                   
 
                     <!--add css-->
                     <!--user in-danger lever-->
-                    <fieldset class="nestedfieldset">
-                        <legend>Danger Level<em>Are you in Danger?</em></legend>
-                        <div>
-                            <label><input type="radio" id="Yes" name="Yes" value="Danger">Yes</label>
-                        </div>
-                        <div>
-                            <label><input type="radio" id="No" name="No" value="noDanger">No</label>
-                        </div>
-                        <div>
-                            <label><input type="radio" id="Maybe" name="Maybe" value="possibleDanger">Maybe</label>
-                        </div>
-
-                    </fieldset>
-
-
+                    <!--go back to style in block-->
+               
+                        <legend class="sbs" >Are you in Danger?</legend>
+                       
+                            <label class="sbs"><input type="radio" name="level" value="Danger">Yes</label>
+                        
+                            <label class="sbs"><input type="radio" name="level" value="noDanger">No</label>
+                
+                            <label class="sbs"><input type="radio" name="level" value="possibleDanger">Maybe</label>
+                
                     <!--additional information-->
-                    <label>Additonal infomation
+                    <label class="top">Additonal infomation
                         <input type="text" size="100" name="input1" required pattern="[A-Za-z]">
                     </label>
-                </fieldset>
+                
 
                 
                 <!--Submit button-->
-                <fieldset>
-                <input type="submit">
-                </fieldset>
+                
+                    <legend></legend>
+                <input type="submit" value="Report Storm" class="submitBtn">
+                
             </form>
 
         </article>
@@ -149,8 +147,8 @@
     <footer>
 
 
-
-        <!-- <section class="headings">
+        
+      <section class="headings">
             <h1>Contact</h1>
             <div class="m">place holder</div>
 
@@ -164,15 +162,16 @@
 
 </body>
 
-<!--pancake banner on fridays-->
+    <!--pancake banner on fridays
         <script src="pancakes6.js"></script>
-
+    -->
         <!--hamburger menue-->
         <script src="hamburger8.js"></script>
 
-        <!--windChill-->
+        <!--windChill
         <script src="windchill.js"></script>
-
+            -->
+            
         <!--web font loader-->
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script src="webFontLoader.js"></script>

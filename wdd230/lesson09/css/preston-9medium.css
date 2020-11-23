@@ -1,0 +1,53 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        border: none;
+        padding: .8rem 1rem;
+        border-right: 1px solid rgba(0, 0, 0, .3);
+    }
+
+    .flex {
+        flex-direction: row;
+    }
+
+    .flex img {
+        padding-top: 0;
+        padding-right: 10px;
+
+    }
+    .stats {
+        position: absolute;
+        top: 25px;
+        left: 50px;
+        background: radial-gradient(#ffffff, #ef8354);
+        border: 1px solid #000;
+        padding: 1.5rem;
+        box-shadow: 0 0 30px #111;
+        opacity: .8;
+    }
+    
+    
+    .herodiv {
+        margin: 10px auto;
+        position: relative;
+    }
+}
+
+/*end medium */

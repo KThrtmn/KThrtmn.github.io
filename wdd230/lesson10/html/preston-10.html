@@ -32,6 +32,7 @@
 </header>
 
 <body>
+<script src="../js/weatherforcast.js"></script>
 
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
@@ -65,11 +66,15 @@
 
                 <section class="stats">
                     <h3>Weather Summary</h3>
-                    <p>Current: <span id="current">46&#176;</span></p>
-                    <p>Hight: <span id="high">47&#176;</span></p>
-                    <p>Humidity: <span id="humidity">47%</span></p>
-                    <p>Wind Speed: <span id="windSpeed">10 mph</span></p>
-                    <p>Wind Chill: <span id="chill">-10&#176;</span></p>
+                    <p>
+                        Current: 
+                        <span id="current-temp">&deg; F</span>
+                    </p>
+                    <!--<p>Hight: <span id="high">&deg; F</span></p>
+                    <p>Humidity: <span id="humidity"></span></p>
+                    <p>Wind Speed: <span id="windSpeed"></span></p>
+                    <p>Wind Chill: <span id="chill"></span></p>
+                    -->
                 </section>
             </div>
             <br>
@@ -143,19 +148,19 @@
 </body>
 
 <!--pancake banner on fridays-->
-<script src="pancakes10.js"></script>
+<script src="../js/pancakes10.js"></script>
 
 <!--hamburger menue-->
-<script src="hamburger10.js"></script>
+<script src="../js/hamburger10.js"></script>
 
 <!--windChill
-<script src="windchill10.js"></script>
+<script src="../js/windchill10.js"></script>
 -->
 
 
 <!--web font loader-->
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-<script src="webFontLoader10.js"></script>
+<script src="../js/webFontLoader.js"></script>
 
 
 </html>

@@ -1,7 +1,8 @@
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=1adc67f3362ce5c5a328dbdb8e4aab65";
 
 
-
+//put as function, add loop to get multible icons
+//icons permater
 
 fetch(apiURL)
     .then(response => response.json())

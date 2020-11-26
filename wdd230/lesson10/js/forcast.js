@@ -13,7 +13,24 @@ fetch(apiURL)
         const forcast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
         console.log(forcast);
 
+        // = assigns ; == equivelent
+
+        //forcast = [0,1,2,3,4];
+
+        
 
         //get day of the week
 
+        for (let i=0; i<=forcast.length-1; i++)
+    {
+       console.log(forcast[i].main.temp);
+
+    }
+
     });
+
+
+//forcast.length allows for flexability in coding
+
+    
+

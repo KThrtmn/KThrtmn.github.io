@@ -8,21 +8,18 @@ fetch(apiURL)
     .then(response => response.json())
     .then((jsObject) => {
         console.log(jsObject);
-
-        //selecting html id, naming constent
-        //const curtemp = document.querySelector("#current-temp");
-        const iconSource = document.querySelector("#imagesrc");
+ 
+        
         const weatherIcon = document.querySelector("#icon");
-
-
-        //pathing to infomation from constent
-       // curtemp.innerHTML = jsObject.main.temp;
-
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
-        const desc = jsObject.weather[0].description;
-
-        document.getElementById('imagesrc').textContent = imagesrc;
         document.getElementById('icon').setAttribute('src', imagesrc);
         document.getElementById('icon').setAttribute('alt', desc);
+
+
+
     });
 
+    for (let i=0; i<=weather.length; i++)
+    {
+        weather[i].description;
+    }

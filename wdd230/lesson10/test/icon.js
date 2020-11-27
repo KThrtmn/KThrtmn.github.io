@@ -8,18 +8,28 @@ fetch(apiURL)
     .then(response => response.json())
     .then((jsObject) => {
         console.log(jsObject);
- 
+        const icon = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
+
         
-        const weatherIcon = document.querySelector("#icon");
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
-        document.getElementById('icon').setAttribute('src', imagesrc);
-        document.getElementById('icon').setAttribute('alt', desc);
+        for(let i = 0; i<icon.length; i++){
+
+            weather[i].description;
+
+            let forecast = document.createElement('section');
+            let image = document.createElement('img');
+            let pday = document.createElement('p');
+            let ptemp = document.createElement('p');
 
 
+            //Will I need to inerpolate?
+            pday.innerHTML = //output of the day of the week//
+            ptemp.inneHTML = //output of the temp//
+    
+            forecast.appendChild(image);
+            forecast.appendChild(p);
+        
+            }
 
     });
 
-    for (let i=0; i<=weather.length; i++)
-    {
-        weather[i].description;
-    }
+    

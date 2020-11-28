@@ -170,17 +170,14 @@ div img {
 }
 
 
-.flex {
+.forecast {
     display: flex;
     flex-direction: column;
+  
 }
 
 
-.flex img {
-    padding-top: 10px;
-    width: 100%;
-    height: auto;
-}
+
 
 
 .articleTitle {
@@ -224,6 +221,7 @@ div img {
     box-shadow: 0 0 10px #000;
     text-align: center;
 }
+
 
 table,
 th,

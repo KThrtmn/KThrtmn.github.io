@@ -45,29 +45,7 @@ fetch(apiURL)
         /*******************ICON*********************/
 
 
-            const icon = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
 
-
-            for (let i = 0; i < icon.length; i++) {
-
-                weather[i].description;
-
-                let forecast = document.createElement('section');
-                let image = document.createElement('img');
-                let pday = document.createElement('p');
-                let ptemp = document.createElement('p');
-
-
-                //Will I need to inerpolate?
-                pday.innerHTML = //output of the day of the week//
-                    ptemp.inneHTML = //output of the temp//
-
-                    forecast.appendChild(image);
-                forecast.appendChild(p);
-
-
-
-            });
 
         //WIND CHILL//
         function getWindChill(wind, curtem) {
@@ -112,16 +90,35 @@ fetch(apiURL)
             //DAYS OF THE WEEK//
 
             var daysOfTheWeek = ["sun", "mon", "tue", "wed", "thur", "fri", "sat"];
+            var forecastParent = document.querySelector(".forecast div");
+
 
             for (let i = 0; i <= forcast.length - 1; i++) {
-                forcast[i].main.temp;
+                var temp = forcast[i].main.temp;
                 var date1 = new Date(forcast[i].dt_txt);
-                //console.log(date1);
                 var weekDay = daysOfTheWeek[date1.getDay()];
-                //console.log(weekDay);
+                const icon = 'https://openweathermap.org/img/w/' + forcast[i].weather[0].icon + '.png';
 
-                //qurey selector for inner html
+                let forecast = document.createElement('div');
+                let pday = document.createElement('p');
+                let ptemp = document.createElement('p');
+                let image = document.createElement('img');
+                image.src = icon;
+                image.alt = forcast[i].weather[0].description;
 
-            }
+                //Will I need to inerpolate?
+                pday.innerHTML = weekDay;
+                ptemp.innerHTML = temp;
 
-        });
+                forecast.appendChild(pday);
+                forecast.appendChild(image);
+                forecast.appendChild(ptemp);
+
+                forecastParent.appendChild(forecast)
+
+            };
+
+        })
+        
+    });
+    

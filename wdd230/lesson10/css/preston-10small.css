@@ -171,9 +171,14 @@ div img {
 
 
 .forecast {
-    display: flex;
-    flex-direction: column;
-  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); 
+    gap:20px;
+    overflow: auto;
+}
+
+.forecast div{
+    border: 1px solid #000;
 }
 
 

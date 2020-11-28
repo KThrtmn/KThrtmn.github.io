@@ -1,4 +1,4 @@
-/*var apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=1adc67f3362ce5c5a328dbdb8e4aab65";
+var apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=1adc67f3362ce5c5a328dbdb8e4aab65";
 
 fetch(apiURL)
     .then(response => response.json())
@@ -30,22 +30,20 @@ fetch(apiURL)
         } else
             return 'N/A';
     }
-*/
+
 
 
 var apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=1adc67f3362ce5c5a328dbdb8e4aab65";
-
-
-var daysOfTheWeek = ["sun", "mon", "tue", "wed", "thur", "fri", "sat"];
 
 fetch(apiURL)
     .then(response => response.json())
     .then((jsObject) => {
         //console.log(jsObject);
         
+       
         const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
         //console.log(forecast);
-      
+        var daysOfTheWeek = ["SUN", "MON", "TUE", "WED", "THURS", "FRI", "SAT"];
        
 
         for (let i = 0; i <= forecast.length - 1; i++) {
@@ -53,11 +51,18 @@ fetch(apiURL)
             var date1 = new Date(forecast[i].dt_txt);
             //console.log(date1);
             var weekDay = daysOfTheWeek[date1.getDay()];
-            //console.log(weekDay);
-            const icon = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';
-           
-            image.src = icon;
-            image.alt = forecast[i].weather[0].description;
-        }
+            console.log(weekDay);
+            
+            weekDay = document.querySelector("#weekDay");
+            weekDay.innerHTML = daysOfTheWeek[date1.getDay()];
+    
+            temp = document.querySelector("#currentTemp");
+            temp.innerHTML = forecast[i].main.temp;
 
+        }
+       
     });
+
+
+
+    

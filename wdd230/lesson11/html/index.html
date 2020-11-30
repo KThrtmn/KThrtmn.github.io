@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StormDance Home Page</title>
+    <meta name="Storm Dance Home Page" content="The home page for Storm Dance,
+     a local weather and news site for the preston Idaho area.">
+
+
+
+    <link href="/css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-10small.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-10medium.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-10large.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="img/x-icon" />
+</head>
+
+<header>
+
+    <div>
+        <img src="/img/logo2.png" alt="logo">
+    </div>
+
+    <div class="contact">
+        <h1>Storm Dance</h1>
+        <p>For The Rainy Days</p>
+    </div>
+
+
+</header>
+
+<body>
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li><a href="fishHaven.html">Fish Haven</a></li>
+            <li><a href="stormecenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <article>
+            <h2>Weather Gallery</h2>
+            <div class="grid">
+                <div class="index">
+                    <h3>Preston Idaho</h3>
+                    <p>Home of Napolean Dynamite</p>
+                    <h4>Year founded: 1866</h4>
+                    <h4>Population: 5204</h4>
+                    <h4>Annual Rain fall: 16.65</h4>
+                </div>
+                <div><img src="../img/prestonIdahoNapolen.jpg" alt="Napolen Dynamite landmarks"></div>
+            </div>
+            <br>
+
+
+            <div class="grid">
+
+                <div class="index">
+                    <h3>Fish Haven</h3>
+                    <p>This is Fish Haven</p>
+                    <h4>Year founded: 1864</h4>
+                    <h4>Population: 501</h4>
+                    <h4>Annual Rain fall: 14.2</h4>
+                </div>
+                <div><img src="../img/bearLake.jpg" alt="Soada Springs landmark"></div>
+                
+            </div>
+            <br>
+            <div class="grid">
+                <div class="index">
+                    <h3>Soda Springs</h3>
+                    <p>Historic Orgean Trail Oasis</p>
+                    <h4>Year founded: 1858</h4>
+                    <h4>Population: 2985</h4>
+                    <h4>Annual Rain fall: 15.75</h4>
+                </div>
+                <div><img src="../img/soadaSprings.jpg" alt="Soada Springs landmark"></div>
+            </div>
+            <br>
+        </article>
+
+    </main>
+    <footer>
+
+
+        <div>
+            <iframe class="resMap" title="Map of Preston Idaho area"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94405.00656083945!2d-111.52248739590523!3d42.317861623490444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87543572a69ecfd7%3A0x73230a4c09501c0b!2sThe%20Church%20of%20Jesus%20Christ%20of%20Latter-day%20Saints!5e0!3m2!1sen!2sus!4v1606768716457!5m2!1sen!2sus"
+                width="270" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+
+        <br>
+        <div class="contact">
+            <h3>
+                Contact information
+            </h3>
+
+            <h4>Phone</h4>
+            <p><a href="tel:208-000-000">208-000-000</a></p>
+            <h4>Email</h4>
+            <p><a href="mailto:someone@example.com">someone@example.com</a></p>
+            <h4>Location</h4>
+            <p><a target="_blank" rel="noreferrer" href="https://goo.gl/maps/RsXciN6vutdndabdA">The Church of Jesus
+                    Christ of Latter-day
+                    Saints,<br> 29 Church Rd, Montpelier, ID 83254</a></p>
+
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/" title="Facebook"> <img class="social"
+                    src="../img/facebookIcon.png" alt="Facebook Icon"></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/" title="Instagram"><img class="social"
+                    src="../img/instagramIcon.png" alt="Instagram Icon"></a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/" title="Twitter"> <img class="social"
+                    src="../img/twitterIcon.png" alt="Twitter Icon"></a>
+
+        </div>
+        </div>
+
+
+    </footer>
+    <div class="footInfo">
+        @
+        <span id="currYear">2020</span>
+        | Katie Hartman | Illinois|
+        <a class="byui" target="_blank" rel="noreferrer" href="https://www.byui.edu/"> BYUI</a>
+
+        <br>
+        <span id="lastUpdated" class="time"></span>
+    </div>
+
+
+
+
+    <!---scripts-->
+
+    <!--gets last updated time-->
+    <script src="../js/time10.js"></script>
+
+    <!--pancake banner on fridays-->
+    <script src="../js/pancakes10.js"></script>
+
+    <!--hamburger menue-->
+    <script src="../js/hamburger10.js"></script>
+
+    <!--web font loader-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/webFontLoader.js"></script>
+
+    <!--weather forecast-->
+    <script src="../js/weatherforcast.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>StormDance Fish Haven</title>
+
+    <meta name="Storm Dance Fish Haven" content="The landing page for Storm Dance, 
+    a local weather and news site for the Fish Haven area.">
+
+
+    <link href="/css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-10small.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-10medium.css" type="text/css" rel="stylesheet" />
+    <link href="../css/preston-10large.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="img/x-icon" />
+</head>
+
+<span id='pancakes'></span>
+
+
+<header>
+
+    <div>
+        <img src="/img/logo2.png" alt="logo">
+    </div>
+
+    <div class="contact">
+        <h1>Storm Dance</h1>
+        <p>For The Rainy Days</p>
+    </div>
+
+
+</header>
+
+<body>
+
+
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li ><a href="preston-10.html">Preston</a></li>
+            <li><a href="sodaSprings.html">Soda Springs</a></li>
+            <li class="active"><a href="#">Fish Haven</a></li>
+            <li><a href="stormecenter.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+
+        <article>
+            <h2>Fish Haven</h2>
+            <hr />
+            <div class="herodiv">
+
+                <picture>
+                    <!--LARGE-->
+                    <source srcset="../img/heroLarge.jpg" media="(min-width:60em)">
+                    <!--MEDIUM-->
+                    <source srcset="../img/heroMedium.jpg" media="(min-width:45em) and (max-width: 59.9em)">
+                    <!--SMALL-->
+                    <img src="../img/heroSmall.jpg" alt="responsive hero img">
+
+                </picture>
+
+
+                <section class="stats">
+                    <h3>Weather Summary</h3>
+                    <p>
+                        Current:
+                        <span id="current-temp">&deg; F</span>
+                    </p>
+                    <p>
+                        High:
+                        <span id="high">&deg; F</span>
+                    </p>
+                    <p>
+                        Humidity: <span id="humidity"></span>
+                    </p>
+                    <p>
+                        Wind Speed: <span id="windSpeed"></span>
+                    </p>
+                    <p>
+                        Wind Chill: <span id="chill"></span>
+                    </p>
+
+                </section>
+            </div>
+            <br>
+        </article>
+
+
+
+
+        <article>
+
+            <section>
+                <h2>Five Day Forecast</h2>
+                <hr>
+                <br>
+                <div class="forecast">
+                    <div>
+                        <!--day of the week-->
+                        <div>
+                            <p>
+                                <span id="weekDay1"></span>
+                            </p>
+                        </div>
+                        <!--icon-->
+                        <p>
+                            <img src="bearLake.jpg" alt="bear lake" id="icon1">
+                        </p>
+                        <!--current temp-->
+                        <div>
+                            <p>
+                                <span id="currentTemp1"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <!--day of the week-->
+                        <div>
+                            <p>
+                                <span id="weekDay2"></span>
+                            </p>
+                        </div>
+                        <!--icon-->
+                        <p>
+                            <img src="bearLake.jpg" alt="bear lake" id="icon2">
+                        </p>
+                        <!--current temp-->
+                        <div>
+                            <p>
+                                <span id="currentTemp2"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <!--day of the week-->
+                        <div>
+                            <p>
+                                <span id="weekDay3"></span>
+                            </p>
+                        </div>
+                        <!--icon-->
+                        <p>
+                            <img src="bearLake.jpg" alt="bear lake" id="icon3">
+                        </p>
+                        <!--current temp-->
+                        <div>
+                            <p>
+                                <span id="currentTemp3"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <!--day of the week-->
+                        <div>
+                            <p>
+                                <span id="weekDay4"></span>
+                            </p>
+                        </div>
+                        <!--icon-->
+                        <p>
+                            <img src="bearLake.jpg" alt="bear lake" id="icon4">
+                        </p>
+                        <!--current temp-->
+                        <div>
+                            <p>
+                                <span id="currentTemp4"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <!--day of the week-->
+                        <div>
+                            <p>
+                                <span id="weekDay5"></span>
+                            </p>
+                        </div>
+                        <!--icon-->
+                        <p>
+                            <img src="bearLake.jpg" alt="bear lake" id="icon5">
+                        </p>
+                        <!--current temp-->
+                        <div>
+                            <p>
+                                <span id="currentTemp5"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </section>
+        </article>
+
+
+
+
+
+
+        <article>
+
+            <h2>Article Title</h2>
+            <hr>
+            <img class="articleImg" src="https://loremflickr.com/250/150/sun,rain,snow,cloud"
+                alt="weather/ article picture">
+            <p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum, ipsum
+                semper varius
+                ultrices,
+                dui enim feugiat mi, ut laoreet eros lectus quis est. Aliquam scelerisque risus ac eros viverra, et
+                luctus
+                mi varius. Suspendisse at augue eget felis mattis malesuada. Donec sed sem vitae massa efficitur
+                tristique.
+                Duis convallis sem lacus, eu molestie lorem vestibulum a. Praesent luctus eleifend est, accumsan
+                molestie
+                nisi lobortis rhoncus. Aliquam erat volutpat. Morbi fermentum ipsum libero. Curabitur suscipit commodo
+                feugiat. Cras fermentum et diam vitae rhoncus. Quisque blandit ante eu volutpat aliquet. Nunc dictum
+                rutrum
+                elit, a molestie est congue quis. Vivamus rutrum in magna vel venenatis. Vivamus at viverra metus.
+                Curabitur fringilla justo a mauris maximus, id tristique tortor semper. Nulla elementum euismod dui, a
+                viverra sem consequat ornare. Nam sit amet mauris ultricies, iaculis mauris sed, mattis elit.
+                Pellentesque
+                habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce tempus lorem vel
+                lectus varius maximus. Integer imperdiet turpis non ornare ultrices. Aenean id scelerisque est.
+                Curabitur
+                quis nibh non purus condimentum posuere. Nam molestie eleifend lorem, id faucibus diam tincidunt non.
+                Pellentesque feugiat luctus augue at hendrerit. Nullam justo lacus, eleifend in enim quis, ullamcorper
+                pretium ex. Nullam nulla libero, scelerisque eu nisl id, porta rhoncus lorem.</p>
+        </article>
+
+    </main>
+
+
+
+    <footer>
+
+
+      
+        <div>
+            <iframe class="resMap" title="Map of Fish Haven"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.958830505177!2d-111.40486806217935!3d42.03803991735526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1606777571675!5m2!1sen!2sus"
+             width="270" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    
+        </div>
+
+        <br>
+        <div class="contact">
+            <h3>
+                Contact information
+            </h3>
+
+            <h4>Phone</h4>
+            <p><a href="tel:208-000-000">208-000-000</a></p>
+            <h4>Email</h4>
+            <p><a href="mailto:someone@example.com">someone@example.com</a></p>
+            <h4>Location</h4>
+            <p><a target="_blank" rel="noreferrer" href="https://goo.gl/maps/LLHvkmkVZGz1C1T76">Fish Haven
+                Idaho 83287</a></p>
+
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/" title="Facebook"> <img class="social"
+                    src="../img/facebookIcon.png" alt="Facebook Icon"></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/" title="Instagram"><img class="social"
+                    src="../img/instagramIcon.png" alt="Instagram Icon"></a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/" title="Twitter"> <img class="social"
+                    src="../img/twitterIcon.png" alt="Twitter Icon"></a>
+
+        </div>
+        </div>
+
+
+    </footer>
+    <div class="footInfo">
+        @
+        <span id="currYear">2020</span>
+        | Katie Hartman | Illinois|
+        <a class="byui" target="_blank" rel="noreferrer" href="https://www.byui.edu/"> BYUI</a>
+
+        <br>
+        <span id="lastUpdated" class="time"></span>
+    </div>
+
+
+
+
+    <!---scripts-->
+
+    <!--gets last updated time-->
+    <script src="../js/time10.js"></script>
+
+    <!--pancake banner on fridays-->
+    <script src="../js/pancakes10.js"></script>
+
+    <!--hamburger menue-->
+    <script src="../js/hamburger10.js"></script>
+
+    <!--web font loader-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/webFontLoader.js"></script>
+
+    <!--weather forecast-->
+    <script src="../js/weatherforcastFish.js"></script>
+
+</body>
+
+</html>

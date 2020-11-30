@@ -4,12 +4,12 @@
     nav ul li a {
         padding: .6rem 1rem;
     }
-
-    .m {
-        letter-spacing: 1.5pt;
-        font-size: larger;
-        margin-left: 17px;
+    footer{
+        display: flex;
+        height: 350px;
     }
+
+
     .stats {
         position: absolute;
         top: 25px;
@@ -30,6 +30,21 @@
     .shadow:hover{
         box-shadow: 0 0 50px #333;
      }
+
+     .articleImg {
+        float: right;
+    }
+    .article{
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+    }
+
+    .grid{
+        display:grid;
+        gap:20px;
+        overflow: auto;
+    }
 
 }
 

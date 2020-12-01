@@ -3,7 +3,7 @@ var apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=i
 fetch(apiURL)
     .then(response => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         //selecting html container by id, naming it a constant
         //weather
         const curtemp = document.querySelector("#current-temp");
@@ -88,14 +88,14 @@ function getIcon(data, index) {
     // curtemp.innerHTML = jsObject.main.temp;
 
     const imagesrc = 'https://openweathermap.org/img/w/' + data + '.png';
-    console.log(imagesrc);
+    //console.log(imagesrc);
 
     weatherIcon.setAttribute('src', imagesrc);
 
     //in a loop
     index.toString() + "#icon" + (index + 1).toString();
 
-    console.log("#icon" + (index + 1).toString());
+    //console.log("#icon" + (index + 1).toString());
 
 
     // document.getElementById('imagesrc').textContent = imagesrc;

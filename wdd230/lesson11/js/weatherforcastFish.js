@@ -3,7 +3,7 @@ var apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0380399&lon
 fetch(apiURL)
     .then(response => response.json())
     .then((jsObject) => {
-        console.log(jsObject);
+        //console.log(jsObject);
         //selecting html container by id, naming it a constant
         //weather
         const curtemp = document.querySelector("#current-temp");
@@ -42,16 +42,16 @@ fetch(apiURL)
 
         const weatherIcon = document.querySelector("#icon");
         const forecast = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(forecast);
+        //console.log(forecast);
         var daysOfTheWeek = ["SUN", "MON", "TUE", "WED", "THURS", "FRI", "SAT"];
 
 
         for (let i = 0; i <= forecast.length - 1; i++) {
             var temp = forecast[i].main.temp;
             var date1 = new Date(forecast[i].dt_txt);
-            console.log(date1);
+            //console.log(date1);
             var weekDay = daysOfTheWeek[date1.getDay()];
-            console.log(weekDay);
+            //console.log(weekDay);
 
             weekDay = document.querySelector("#weekDay" + (i + 1).toString());
             weekDay.innerHTML = daysOfTheWeek[date1.getDay()];
@@ -88,14 +88,14 @@ function getIcon(data, index) {
     // curtemp.innerHTML = jsObject.main.temp;
 
     const imagesrc = 'https://openweathermap.org/img/w/' + data + '.png';
-    console.log(imagesrc);
+    //console.log(imagesrc);
 
     weatherIcon.setAttribute('src', imagesrc);
 
     //in a loop
     index.toString() + "#icon" + (index + 1).toString();
 
-    console.log("#icon" + (index + 1).toString());
+    //console.log("#icon" + (index + 1).toString());
 
 
     // document.getElementById('imagesrc').textContent = imagesrc;

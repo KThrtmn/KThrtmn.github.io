@@ -1,0 +1,78 @@
+{
+  "Rentals": [{
+      "Brand": "Honda Motor Scooter",
+      "Specification": "Honda Metropolitan (49cc)",
+      "people": "1",
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
+      "price": [{
+        "rHalfDay": "$20",
+        "rFullDay": "$30",
+        "WHalfDay": "$25",
+        "WFullDay": "$35"
+      }]
+    },
+    {
+      "Brand": "Honda Motor Scooter",
+      "Specification": "Honda Dio (110cc)",
+      "people": "2",
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
+      "price": [{
+        "rHalfDay": "$30",
+        "rFullDay": "$40",
+        "WHalfDay": "$35",
+        "WFullDay": "$45"
+      }]
+    },
+    {
+      "Brand": "Honda Motor Scooter",
+      "Specification": "Honda PCX150 (149)",
+      "people": "5",
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
+      "price": [{
+        "rHalfDay": "$40",
+        "rFullDay": "$50",
+        "WHalfDay": "$45",
+        "WFullDay": "$55"
+      }]
+
+    },
+    {
+      "Brand": "ATV Side-by-Side",
+      "Specification": "Honda Pioneer 1000",
+      "people": "2",
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
+      "price": [{
+        "rHalfDay": "$50",
+        "rFullDay": "$70",
+        "WHalfDay": "$60",
+        "WFullDay": "$80"
+      }]
+    },
+    {
+      "Brand": "Jeep Rentals",
+      "Specification": "4-door Jeep Wrangler",
+      "amenities": "manual with A/C",
+      "people": "5",
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
+      "price": [{
+        "rHalfDay": "$70",
+        "rFullDay": "$100",
+        "WHalfDay": "$85",
+        "WFullDay": "$125"
+      }]
+    },
+    {
+      "Brand": "Jeep Rentals",
+      "Specification": "2-Door Jeep Wrangler",
+      "amenities": "manual open air",
+      "people": "4",
+      "imageurl": "https://media.ldscdn.org/images/media-library/gospel-art/latter-day-prophets/american-prophet-joseph-smith-jr-1178035-gallery.jpg",
+      "price": [{
+        "rHalfDay": "$60",
+        "rFullDay": "$85",
+        "WHalfDay": "$70",
+        "WFullDay": "$90"
+      }]
+    }
+  ]
+}

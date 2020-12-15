@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scoots</title>
+    <meta name="description" content="The home page for Storm Dance,
+     a local weather and news site for the preston Idaho area.">
+
+
+
+    <link href="/css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="../css/scootsSmall.css" type="text/css" rel="stylesheet" />
+    <link href="../css/scootsMedium.css" type="text/css" rel="stylesheet" />
+    <link href="../css/scootsLarge.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="img/x-icon" />
+
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <img src="../img/logo.png" alt="logo">
+        </div>
+
+        <div class="contact">
+            <h1>Scooterly</h1>
+            <p>For The Explorer in you</p>
+        </div>
+
+
+    </header>
+
+    <body>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="tours.html">Tours</a></li>
+            </ul>
+        </nav>
+
+        <main>
+
+            <article>
+
+
+
+
+                <div class="herodiv">
+
+
+
+                    <picture>
+                        <!--LARGE-->
+                        <source srcset="../img/heroLarge.jpg" media="(min-width:60em)">
+                        <!--MEDIUM-->
+                        <source srcset="../img/heroMedium.jpg" media="(min-width:45em) and (max-width: 59.9em)">
+                        <!--SMALL-->
+                        <img src="../img/heroSmall.jpg" alt="responsive hero img">
+
+                    </picture>
+
+
+                    <div class="cta">
+                        <a href="reservations.html">Reserve Here</a>
+                        summary infomation about aal types of rental.. maybe do after rental page
+    
+    
+                    </div>
+    
+
+                   <!-- <section class="stats">-->
+                        <div class="forecast">
+                            <div>
+                                <div>
+                                <h3>Weather Summary</h3>
+                            </div>
+                                <p>
+                                    Current:
+                                    <span id="current-temp">&deg; F</span>
+                                </p>
+                                <p>
+                                    High:
+                                    <span id="high">&deg; F</span>
+                                </p>
+                                <p>
+                                    Humidity: <span id="humidity"></span>
+                                </p>
+                                <p>
+                                    Wind Speed: <span id="windSpeed"></span>
+                                </p>
+                                <p>
+                                    Wind Chill: <span id="chill"></span>
+                                </p>
+
+                            </div>
+                            
+                                <div>
+                                    <!--day of the week-->
+                                    <div>
+                                        <p>
+                                            <span id="weekDay1"></span>
+                                        </p>
+                                         <!--current temp-->                             
+                                        <h3> <span id="currentTemp1"></span>
+                                        </h3>
+                                    </div>
+                                    <!--icon-->
+                                    <p>
+                                        <img src="" alt="weather icon" id="icon1">
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <!--day of the week-->
+                                    <div>
+                                        <p>
+                                            <span id="weekDay2"></span>
+                                        </p>
+                                         <!--current temp-->
+                                        <h3>
+                                            <span id="currentTemp2"></span>
+                                        </h3>
+                                    </div>
+                                    <!--icon-->
+                                    <p>
+                                        <img src="" alt="weather icon" id="icon2">
+                                    </p>
+                                    <!--current temp-->
+                                </div>
+
+                                <div>
+                                    <!--day of the week-->
+                                    <div>
+                                        <p>
+                                            <span id="weekDay3"></span>
+                                        </p>
+                                        <!--current temp-->
+                                        <h3>
+                                            <span id="currentTemp3"></span>
+                                        </h3>
+                                    </div>
+                                    <!--icon-->
+                                    <p>
+                                        <img src="" alt="weather icon" id="icon3">
+                                    </p>
+                                </div>
+                        </div>
+                    </section>
+
+
+                </div>
+
+                
+           
+
+
+
+
+
+            </article>
+
+
+        </main>
+        <footer>
+
+
+            <div>
+                <iframe class="resMap" title="Map Cozumel"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.63938305786!2d-87.0143395488553!3d20.432027527425568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1607024248683!5m2!1sen!2sus"
+                    width="270" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+
+            <br>
+            <div class="contact">
+                <h3>
+                    Contact information
+                </h3>
+
+                <h4>Phone</h4>
+                <p><a href="tel:888-948-6048">888-948-6048</a></p>
+                <h4>Email</h4>
+                <p><a href="mailto:someone@example.com">someone@example.com</a></p>
+                <h4>Location</h4>
+                <p><a target="_blank" rel="noreferrer" href="https://goo.gl/maps/Tmp3WSHzZK4JdN4R7">
+                        Cozumel, Mexico</a></p>
+                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/" title="Facebook"> <img
+                        class="social" src="../img/facebookIcon.png" alt="Facebook Icon"></a>
+                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/" title="Instagram"><img
+                        class="social" src="../img/instagramIcon.png" alt="Instagram Icon"></a>
+                <a target="_blank" rel="noreferrer" href="https://twitter.com/" title="Twitter"> <img class="social"
+                        src="../img/twitterIcon.png" alt="Twitter Icon"></a>
+
+            </div>
+            </div>
+
+
+        </footer>
+        <div class="footInfo">
+            @
+            <span id="currYear">2020</span>
+            | Katie Hartman | Illinois|
+            <a class="byui" target="_blank" rel="noreferrer" href="https://www.byui.edu/"> BYUI</a>
+
+            <br>
+            <span id="lastUpdated" class="time"></span>
+        </div>
+
+
+
+
+        <!---scripts-->
+
+        <!--gets last updated time-->
+        <script src="../js/time10.js"></script>
+
+        <!--hamburger menue-->
+        <script src="../js/hamburger.js"></script>
+
+        <!--web font loader-->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script src="../js/webFontLoader.js"></script>
+
+        <!--weather forecast-->
+        <script src="../js/weatherforcast.js"></script>
+
+    </body>
+
+</html>

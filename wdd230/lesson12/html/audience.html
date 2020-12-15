@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scoots</title>
+    <meta name="description" content="The home page for Storm Dance,
+     a local weather and news site for the preston Idaho area.">
+
+
+
+    <link href="/css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="../css/scootsSmall.css" type="text/css" rel="stylesheet" />
+    <link href="../css/scootsMedium.css" type="text/css" rel="stylesheet" />
+    <link href="../css/scootsLarge.css" type="text/css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <!--logo-->
+        </div>
+
+        <div class="contact">
+            <h1>Scoots</h1>
+            <p>For the explorer in you</p>
+        </div>
+
+
+    </header>
+
+
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="purpose.html">Site Purpose</a></li>
+            <li class="active"><a href="audience.html">Target Audience</a></li>
+            <li><a href="map">Site Map</a></li>
+            <li><a href="color.html">Color Scheme</a></li>
+            <li><a href="type">Typography</a></li>
+            <li><a href="wireframe">Wireframe Sketches</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h1>Audience</h1>
+            <hr>
+            <h2>Personal</h2>
+            <p>
+                <b>What is the age of your person?</b>
+                <br>
+                The age of my person would be later 20's to early 40's.
+                <br>
+                <b>What is the gender of your person?</b>
+                <br>
+                Both Female and Male, this website has the potential to skew
+                towards females more since they may be more likely to plan a trip a head of time.
+                <br>
+                <b>What is the highest level of education this person has received?</b>
+                <br>
+                I could see people of all walks of life using this website. Though I believe that
+                more people with a minimum of some college would use this website.
+                <br>
+            </p>
+
+
+            <h2>Professional</h2>
+            <hr>
+            <p>
+                <b> How much work experience does your person have?</b>
+                <br>
+                I would assume this person would have a minimum of several years of work
+                experience under there belt to be able to afford a vacation out of the country. Assuming we are
+                talking about tourists.
+                <br>
+                <b>Why will they come to the site? (User needs, interests, and goals)
+                    Where (or from whom) else is this person getting information about your issue or similar programs or
+                    services?</b>
+                <br>
+                They would be using this website because they would be unfamiliar with the island. They would use the
+                this to
+                plan their trip a head of time. They may get information by word when they are on the island.
+                <br>
+                <b>When and where will users access the site? (User environment and context)</b>
+                <br>
+                They would be mostly be using this website by mobile, especially once they are on the island. So it is
+                important
+                that this website is responsive.
+                <br>
+            </P>
+
+        <!--   <h2>Technical</h2>
+            <p>
+                What technological devices does your person use on a regular basis?
+                What software and/or applications does your person use on a regular basis?
+                Through what technological device does your user primarily access the web for information?
+                How much time does your person spend browsing the web every day?
+                User Motivation
+                What is your person motivated by?
+                What are they looking for?
+                What is your person looking to do?
+                What are his needs?
+            </p>
+--> 
+        </article>
+    </main>
+    <footer>
+
+
+
+
+        <div>
+            <iframe class="resMap" title="Map Cozumel"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.63938305786!2d-87.0143395488553!3d20.432027527425568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1607024248683!5m2!1sen!2sus"
+                width="270" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+        </div>
+
+        <br>
+        <div class="contact">
+            <h3>
+                Contact information
+            </h3>
+
+            <h4>Phone</h4>
+            <p><a href="tel:208-000-000">208-000-000</a></p>
+            <h4>Email</h4>
+            <p><a href="mailto:someone@example.com">someone@example.com</a></p>
+            <h4>Location</h4>
+            <p><a target="_blank" rel="noreferrer" href="https://goo.gl/maps/Tmp3WSHzZK4JdN4R7">
+                    Cozumel, Mexico</a></p>
+
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/" title="Facebook"> <img class="social"
+                    src="../img/facebookIcon.png" alt="Facebook Icon"></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/" title="Instagram"><img class="social"
+                    src="../img/instagramIcon.png" alt="Instagram Icon"></a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/" title="Twitter"> <img class="social"
+                    src="../img/twitterIcon.png" alt="Twitter Icon"></a>
+
+        </div>
+
+
+
+    </footer>
+
+    <div class="footInfo">
+        @
+        <span id="currYear">2020</span>
+        | Katie Hartman | Illinois|
+        <a class="byui" target="_blank" rel="noreferrer" href="https://www.byui.edu/"> BYUI</a>
+
+        <br>
+        <span id="lastUpdated" class="time"></span>
+    </div>
+
+
+
+
+    <!---scripts-->
+
+    <!--gets last updated time-->
+    <script src="../js/time10.js"></script>
+
+    <!--hamburger menue-->
+    <script src="../js/hamburger.js"></script>
+
+    <!--web font loader-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/webFontLoader.js"></script>
+
+
+
+</body>
+
+</html>

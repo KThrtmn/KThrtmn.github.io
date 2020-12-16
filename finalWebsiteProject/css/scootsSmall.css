@@ -245,15 +245,18 @@ article div img{
 
 .forecast div{
     border: 1px solid;
-    background-color: #4f5d75d2;
+    background-color: #48a9a673;
     text-align: center;
     border-radius: 10px;
 }
 
 .forecast div div{
-    background-color:#ef8254;
+    background-color:#4281A4;
     
 }
+
+
+
 
 
 .articleImg {
@@ -287,7 +290,9 @@ color: #fff;
 padding: 1em 1em;
 text-decoration: none;
 text-transform: uppercase;
-position: relative;
+position: absolute;
+top: 25px;
+left: 50px;
 
 }
 
@@ -297,6 +302,17 @@ position: relative;
   
 }
 
+
+ul li{
+    line-height: 2em;
+    font-size: 20px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #C1666B; 
+
+}
 
 .herodiv {
     margin: 10px auto;
@@ -311,7 +327,7 @@ position: relative;
     overflow: auto;
 }
 
-
+/***crads***/
 .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
@@ -321,12 +337,14 @@ position: relative;
 
 
 
+
 .index, .index h3, .index h4{
     background: #4f5d75;
     text-align: center;
     color: #fff;
     line-height: 1.6em;
 }
+
 
 
 

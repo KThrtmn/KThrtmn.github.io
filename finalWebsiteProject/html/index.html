@@ -34,206 +34,326 @@
 
     </header>
 
-    <body>
-
-        <nav class="clearfix">
-            <button onclick="toggleMenu()">&#9776;</button>
-            <ul id="primaryNav" class="hide">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="reservations.html">Reservations</a></li>
-                <li><a href="tours.html">Tours</a></li>
-            </ul>
-        </nav>
-
-        <main>
-
-            <article>
 
 
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+        </ul>
+    </nav>
 
+    <main>
 
-                <div class="herodiv">
+        <article>
 
 
 
-                    <picture>
-                        <!--LARGE-->
-                        <source srcset="../img/heroLarge.jpg" media="(min-width:60em)">
-                        <!--MEDIUM-->
-                        <source srcset="../img/heroMedium.jpg" media="(min-width:45em) and (max-width: 59.9em)">
-                        <!--SMALL-->
-                        <img src="../img/heroSmall.jpg" alt="responsive hero img">
 
-                    </picture>
+            <div class="herodiv">
 
 
-                    <div class="cta">
-                        <a href="reservations.html">Reserve Here</a>
-                        summary infomation about aal types of rental.. maybe do after rental page
-    
-    
-                    </div>
-    
 
-                   <!-- <section class="stats">-->
-                        <div class="forecast">
-                            <div>
-                                <div>
-                                <h3>Weather Summary</h3>
-                            </div>
-                                <p>
-                                    Current:
-                                    <span id="current-temp">&deg; F</span>
-                                </p>
-                                <p>
-                                    High:
-                                    <span id="high">&deg; F</span>
-                                </p>
-                                <p>
-                                    Humidity: <span id="humidity"></span>
-                                </p>
-                                <p>
-                                    Wind Speed: <span id="windSpeed"></span>
-                                </p>
-                                <p>
-                                    Wind Chill: <span id="chill"></span>
-                                </p>
+                <picture>
+                    <!--LARGE-->
+                    <source srcset="../img/heroLarge.jpg" media="(min-width:60em)">
+                    <!--MEDIUM-->
+                    <source srcset="../img/heroMedium.jpg" media="(min-width:45em) and (max-width: 59.9em)">
+                    <!--SMALL-->
+                    <img src="../img/heroSmall.jpg" alt="responsive hero img">
 
-                            </div>
-                            
-                                <div>
-                                    <!--day of the week-->
-                                    <div>
-                                        <p>
-                                            <span id="weekDay1"></span>
-                                        </p>
-                                         <!--current temp-->                             
-                                        <h3> <span id="currentTemp1"></span>
-                                        </h3>
-                                    </div>
-                                    <!--icon-->
-                                    <p>
-                                        <img src="" alt="weather icon" id="icon1">
-                                    </p>
-                                </div>
+                </picture>
 
-                                <div>
-                                    <!--day of the week-->
-                                    <div>
-                                        <p>
-                                            <span id="weekDay2"></span>
-                                        </p>
-                                         <!--current temp-->
-                                        <h3>
-                                            <span id="currentTemp2"></span>
-                                        </h3>
-                                    </div>
-                                    <!--icon-->
-                                    <p>
-                                        <img src="" alt="weather icon" id="icon2">
-                                    </p>
-                                    <!--current temp-->
-                                </div>
 
-                                <div>
-                                    <!--day of the week-->
-                                    <div>
-                                        <p>
-                                            <span id="weekDay3"></span>
-                                        </p>
-                                        <!--current temp-->
-                                        <h3>
-                                            <span id="currentTemp3"></span>
-                                        </h3>
-                                    </div>
-                                    <!--icon-->
-                                    <p>
-                                        <img src="" alt="weather icon" id="icon3">
-                                    </p>
-                                </div>
-                        </div>
-                    </section>
-
+                <div class="cta">
+                    <a href="reservations.html">Reserve Your Adventure Here</a>
 
                 </div>
 
+
+                <!-- <section class="stats">-->
+                <h2> Weather Summary</h2>
+                <div class="forecast">
+                    <div>
+                        <div>
+                            <h3>Weather Summary</h3>
+                        </div>
+                        <p>
+                            Current:
+                            <span id="current-temp">&deg; F</span>
+                        </p>
+                        <p>
+                            High:
+                            <span id="high">&deg; F</span>
+                        </p>
+                        <p>
+                            Humidity: <span id="humidity"></span>
+                        </p>
+                        <p>
+                            Wind Speed: <span id="windSpeed"></span>
+                        </p>
+                        <p>
+                            Wind Chill: <span id="chill"></span>
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <!--day of the week-->
+                        <div>
+                            <p>
+                                <span id="weekDay1"></span>
+                            </p>
+                            <!--current temp-->
+                            <h3> <span id="currentTemp1"></span>
+                            </h3>
+                        </div>
+                        <!--icon-->
+                        <p>
+                            <img src="" alt="weather icon" id="icon1">
+                        </p>
+                    </div>
+
+                    <div>
+                        <!--day of the week-->
+                        <div>
+                            <p>
+                                <span id="weekDay2"></span>
+                            </p>
+                            <!--current temp-->
+                            <h3>
+                                <span id="currentTemp2"></span>
+                            </h3>
+                        </div>
+                        <!--icon-->
+                        <p>
+                            <img src="" alt="weather icon" id="icon2">
+                        </p>
+                        <!--current temp-->
+                    </div>
+
+                    <div>
+                        <!--day of the week-->
+                        <div>
+                            <p>
+                                <span id="weekDay3"></span>
+                            </p>
+                            <!--current temp-->
+                            <h3>
+                                <span id="currentTemp3"></span>
+                            </h3>
+                        </div>
+                        <!--icon-->
+                        <p>
+                            <img src="" alt="weather icon" id="icon3">
+                        </p>
+                    </div>
+                </div>
+                </section>
+
+
+            </div>
+
+
+<!--add links-->
+
+            <h2> Rental options</h2>
+            <hr/>
+            <div class="forecast">
+                <div>
+                    <div>
+                        <h3>Honda Metro Scooter</h3>
+                        
+                    </div>
+
+                    <p>
+                        <img src="../img/Metro-150.jpg" alt="Metro">
+                    </p>
+                    <p>
+                        Max. Persons: 1
+                    <p>
+                        <h4> Reservations</h4>
+                        <p>Half day (3 Hours): $20</p>
+                        <p>Full day: $30</p>
+                        <h4> Walk- In</h4>
+                        <p>Half day (3 Hours): $25</p>
+                        <p>Full day: $35</p>
+                        
+                </div>
+
                 
-           
+                <div>
+                    <div>
+                        <h3>Honda Dio Scooter</h3>
+                    </div>
 
+                    <p>
+                        <img src="../img/dio-150.jpg" alt="Dio">
+                    </p>
+                    <p>
+                        Max. Persons: 2
+                    <p>
+                        <h4> Reservations</h4>
+                        <p>Half day (3 Hours): $30</p>
+                        <p>Full day: $40</p>
+                        <h4> Walk- In</h4>
+                        <p>Half day (3 Hours): 325</p>
+                        <p>Full day: $45</p>
+                </div>
 
+                <div>
+                    <div>
+                        <h3>Honda PCX150 Scooter</h3>
+                    </div>
 
+                    <p>
+                        <img src="../img/PCX-150.jpg" alt="PCX150">
+                    </p>
+                    <p>
+                        Max. Persons: 2
+                    <p>
+                        <h4> Reservations</h4>
+                        <p>Half day (3 Hours): $40</p>
+                        <p>Full day: $50</p>
+                        <h4> Walk- In</h4>
+                        <p>Half day (3 Hours): $45</p>
+                        <p>Full day: $55</p>
+                </div>
+                <div>
+                    <div>
+                        <h3>Honda Pioneer ATV</h3>
+                    </div>
 
+                    <p>
+                        <img src="../img/pioneer-150.jpg" alt="Metro">
+                    </p>
+                    <p>
+                        Max. Persons: 4
+                    <p>
+                        <h4> Reservations</h4>
+                        <p>Half day (3 Hours): $50</p>
+                        <p>Full day: $70</p>
+                        <h4> Walk- In</h4>
+                        <p>Half day (3 Hours): $65</p>
+                        <p>Full day: $80</p>
+                </div>
+                <div>
+                    <div>
+                        <h3>Jeep Wrangler</h3>
+                        <p>4 door with a/c</p>
+                    </div>
 
-            </article>
+                    <p>
+                        <img src="../img/4door-150.jpg" alt="Metro">
+                    </p>
+                    <p>
+                        Max. Persons: 5
+                    <p>
+                        <h4> Reservations</h4>
+                        <p>Half day (3 Hours): $70</p>
+                        <p>Full day: $100</p>
+                        <h4> Walk- In</h4>
+                        <p>Half day (3 Hours): $85</p>
+                        <p>Full day: $125</p>
+                </div>
+                <div>
+                    <div>
+                        <h3>Jeep Wrangler</h3>
+                        <p>2 door</p>
+                    </div>
 
+                    <p>
+                        <img src="../img/2door-150.jpg" alt="Metro">
+                    </p>
+                    <p>
+                        Max. Persons: 4
+                    <p>
+                        <h4> Reservations</h4>
+                        <p>Half day (3 Hours): $60</p>
+                        <p>Full day: $85</p>
+                        <h4> Walk- In</h4>
+                        <p>Half day (3 Hours): $70</p>
+                        <p>Full day: $90</p>
+                </div>
 
-        </main>
-        <footer>
-
-
-            <div>
-                <iframe class="resMap" title="Map Cozumel"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.63938305786!2d-87.0143395488553!3d20.432027527425568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1607024248683!5m2!1sen!2sus"
-                    width="270" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
             </div>
+
+
 
 
             <br>
-            <div class="contact">
-                <h3>
-                    Contact information
-                </h3>
 
-                <h4>Phone</h4>
-                <p><a href="tel:888-948-6048">888-948-6048</a></p>
-                <h4>Email</h4>
-                <p><a href="mailto:someone@example.com">someone@example.com</a></p>
-                <h4>Location</h4>
-                <p><a target="_blank" rel="noreferrer" href="https://goo.gl/maps/Tmp3WSHzZK4JdN4R7">
-                        Cozumel, Mexico</a></p>
-                <a target="_blank" rel="noreferrer" href="https://www.facebook.com/" title="Facebook"> <img
-                        class="social" src="../img/facebookIcon.png" alt="Facebook Icon"></a>
-                <a target="_blank" rel="noreferrer" href="https://www.instagram.com/" title="Instagram"><img
-                        class="social" src="../img/instagramIcon.png" alt="Instagram Icon"></a>
-                <a target="_blank" rel="noreferrer" href="https://twitter.com/" title="Twitter"> <img class="social"
-                        src="../img/twitterIcon.png" alt="Twitter Icon"></a>
+        </article>
 
-            </div>
-            </div>
+    </main>
+    <footer>
 
 
-        </footer>
-        <div class="footInfo">
-            @
-            <span id="currYear">2020</span>
-            | Katie Hartman | Illinois|
-            <a class="byui" target="_blank" rel="noreferrer" href="https://www.byui.edu/"> BYUI</a>
-
-            <br>
-            <span id="lastUpdated" class="time"></span>
+        <div>
+            <iframe class="resMap" title="Map Cozumel"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.63938305786!2d-87.0143395488553!3d20.432027527425568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1607024248683!5m2!1sen!2sus"
+                width="270" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
         </div>
 
 
+        <br>
+        <div class="contact">
+            <h3>
+                Contact information
+            </h3>
+
+            <h4>Phone</h4>
+            <p><a href="tel:888-948-6048">888-948-6048</a></p>
+            <h4>Email</h4>
+            <p><a href="mailto:someone@example.com">someone@example.com</a></p>
+            <h4>Location</h4>
+            <p><a target="_blank" rel="noreferrer" href="https://goo.gl/maps/Tmp3WSHzZK4JdN4R7">
+                    Cozumel, Mexico</a></p>
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/" title="Facebook"> <img class="social"
+                    src="../img/facebookIcon.png" alt="Facebook Icon"></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/" title="Instagram"><img class="social"
+                    src="../img/instagramIcon.png" alt="Instagram Icon"></a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com/" title="Twitter"> <img class="social"
+                    src="../img/twitterIcon.png" alt="Twitter Icon"></a>
+
+        </div>
+        </div>
 
 
-        <!---scripts-->
+    </footer>
+    <div class="footInfo">
+        @
+        <span id="currYear">2020</span>
+        | Katie Hartman | Illinois|
+        <a class="byui" target="_blank" rel="noreferrer" href="https://www.byui.edu/"> BYUI</a>
 
-        <!--gets last updated time-->
-        <script src="../js/time10.js"></script>
+        <br>
+        <span id="lastUpdated" class="time"></span>
+    </div>
 
-        <!--hamburger menue-->
-        <script src="../js/hamburger.js"></script>
 
-        <!--web font loader-->
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-        <script src="../js/webFontLoader.js"></script>
 
-        <!--weather forecast-->
-        <script src="../js/weatherforcast.js"></script>
 
-    </body>
+    <!---scripts-->
+
+    <!--gets last updated time-->
+    <script src="../js/time10.js"></script>
+
+    <!--hamburger menue-->
+    <script src="../js/hamburger.js"></script>
+
+    <!--web font loader-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/webFontLoader.js"></script>
+
+    <!--weather forecast-->
+    <script src="../js/weatherforcast.js"></script>
+
+</body>
 
 </html>

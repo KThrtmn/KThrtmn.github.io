@@ -19,13 +19,13 @@ fetch(requestURL)
       
       //interpolations 
       //add details and attributes
-      h2.innerHTML = `${prophets[i].name} ${prophets[i].lastname} - Children: ${prophets[i].numofchildren}`;
-      p.innerHTML = `Date of Birth: ${prophets[i].birthdate} <br> Birth Place: ${prophets[i].birthplace}`;
+      //h2.innerHTML = `${prophets[i].name} ${prophets[i].lastname} - Children: ${prophets[i].numofchildren}`;
+      //p.innerHTML = `Date of Birth: ${prophets[i].birthdate} <br> Birth Place: ${prophets[i].birthplace}`;
       
       
 
-      image.setAttribute('src', prophets[i].imageurl);
-      image.setAttribute('alt', `Offical Portriat of ${prophets[i].name} ${prophets[i].lastname}`);
+      //image.setAttribute('src', prophets[i].imageurl);
+      //image.setAttribute('alt', `Offical Portriat of ${prophets[i].name} ${prophets[i].lastname}`);
 
 
       // add content to the container
